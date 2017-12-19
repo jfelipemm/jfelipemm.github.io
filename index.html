@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1>Hello World</h1>
-            <p>I'm hosted with GitHub Pages.</p>
+        <h1>Resenha: Arquitetura de Von Neumann x Arquitetura de Harvard</h1>
+        <h2>Arquitetura de Von Neumann</h2>
+            <p>A arquitetura de Von Neumann é caracterizada, principalmente, pela capacidade de armazenar tanto dados
+                quanto instruções na memória. Antes, as instruções eram feitas diretamente em hardware, dificultando a
+                manutenção. Ela é composta por três elementos principais: a CPU(unidade de processamento), memória e
+                dispositivos de entrada/saída.</p>
+            <p>A CPU é dividida em uma unidade de controle, responsável pela organização das instruções e
+                as ordens em que são executadas, a unidade lógica-aritmética, responsável pela execução das operações
+                definidas pelas instruções sobre os dados presentes na memória, e registradores, onde ficam
+                armazenados temporariamente os dados utilizados pelo processador, garantindo um acesso rápido aos dados. 
+                A memória é onde ficam armazenados os dados e as instruções dos programas a serem executados. Seriam a
+                memória RAM dos computadores atuais. Os dispositivos de entrada/saída são responsáveis pela interação entre
+                o usuário e a máquina, permitindo inserir e/ou obter informações. Os três componentes principais da arquitetura são conectados entre si por uma interface de comunicação
+                conhecida como barramento, por onde são transferidos os dados e as instruções.</p>
+        <h2>Arquitetura de Harvard</h2>
+            <p>A arquitetura de Harvard é bastante semelhante a de Von Neumann no que diz respeito a CPU e as interfaces de 
+                entrada/saída, diferenciando-se em como a memória é tratada. Na arquitetura de Harvard, existem dois tipos de
+                memória, uma memória para instruções e outra para dados. Também existem dois barramentos para cada tipo de
+                memória.
+        <h2>Arquitetura de Von Neumann x Arquitetura de Harvard</h2>
+            <p>Um problema que ocorre na arquitetura de Von Neumann, e que é conhecido como gargalo de Von Neumann, é o fato de
+                que, durante a busca dos dados na memória, a CPU precisa esperar até que os dados sejam recebidos,
+                resultando em um tempo de espera em que a CPU não executa nenhuma operação. Esse problema é resolvido na
+                arquitetura de Harvard, pois, já que existem dois tipos de memória e uma barramento para cada uma delas,
+                após a CPU requisitar a busca por dados na memória de dados e enquanto os dados estão sendo buscados, a CPU
+                pode requisitar a próxima instrução na memória de instruções e já ir trabalhando na sua decodificação
+                enquanto os dados não chegam. Apesar dessa vantagem da arquitetura de Harvard, ela não se popularizou pois,
+                além do ganho de performance não ter sido tão significativo, outras formas de tratar esse problema surgiram
+                na arquitetura de Von Neumann, como a implementação de uma hierarquia de memória e uso de pipeline nos
+                processadores.</p>
     </body>
+    <footer>
+        <p>Escrito por Jesulino Felipe Malaquias Macêdo para a disciplina CET081 - Organização e Arquitetura de Computadores
+            ministrada pelo professor Leard de Oliveira Fernandes</p>
+        <p>UESC - 2017.2</p>
+    </footer>
 </html>
